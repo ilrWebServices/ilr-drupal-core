@@ -19,7 +19,7 @@ First, clone the repo as you usually would into a working directory within your 
 
 This places Drupal's root directory at %webroot%/ilrdrupal/docroot.
 
-> **Note:** throughout these instructions, I'm assuming that you're running the terminal-based commands 
+> **Note:** These instructions assume that you're running the terminal-based commands 
 > while logged into your virtual server via an SSH session. Since Vagrant mirrors the /var/www/ directory 
 > in a directory on your local machine - e.g., c:\vagrant-files\www, you could also do these commands there from a command prompt.
 
