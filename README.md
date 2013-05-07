@@ -23,12 +23,7 @@ This places Drupal's root directory at %webroot%/ilrdrupal/docroot.
 > while logged into your virtual server via an SSH session. Since Vagrant mirrors the /var/www/ directory 
 > in a directory on your local machine - e.g., c:\vagrant-files\www, you could also do these commands there from a command prompt.
 
-To see how things look so far, open a browser and go to http://33.33.33.40/ilrdrupal/docroot
-
-Because you haven't set up a database yet, Drupal will attempt to load its install page, but will fail with the following message:
-
-> There was a problem initializing Drupal. Drupal can't load because database settings have not been provided. 
-> Please create a database settings file at /var/www/site-php/ilr/ilrdrupal/settings-php.inc and try again.
+Before running Drupal's install script, you'll have to add one more piece to account for the way Acquia manages the database.
 
 #### Creating the setting-php.inc file
 
