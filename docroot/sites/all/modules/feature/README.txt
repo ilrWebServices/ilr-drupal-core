@@ -1,0 +1,1 @@
+This directory holds features defined and managed by the Features contributed module.
