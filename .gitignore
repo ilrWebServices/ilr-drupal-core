@@ -1,5 +1,6 @@
 # Ignore configuration files that may contain sensitive information.
-docroot/sites/*/settings*.php
+# docroot/sites/*/settings*.php
+# We don't do this at ILR because we use Acquia's setting.php and it's stage-specific includes. No passwords saved in settings.php
 
 # Ignore paths that contain user-generated content.
 docroot/files
