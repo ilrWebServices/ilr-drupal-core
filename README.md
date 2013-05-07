@@ -45,7 +45,7 @@ The quickest way to get up and running is to clone the _site-php_ repo from our 
 
 Once you've done that, follow these steps to finish the installation of ilrdrupal:
 
-1. On your seb server, create a new mySql database and note the database name and the 
+1. On your web server, create a new mySql database and note the database name and the 
    username and password of a user with full rights to that database.
 
 2.  Create a new settings-php.inc file for your new site in a subdirectroy of /var/www/site-php/ilr that has 
@@ -86,10 +86,10 @@ If http://33.33.33.40/ilrdrupal/docroot seems like a lot to type and look at, yo
 
     Alias /mydrupal "/var/www/ilrdrupal/docroot"
 
-to the <VirtualHost> block of /etc/apache2/apache2.conf. If you're on our default Vagrant virtual boxes, then don't edit apache2.conf directly. Edit the file that apache2.conf includes: /etc/apache2/sites-enabled/000-default.
+to the \<VirtualHost> block of /etc/apache2/apache2.conf. If you're on our default Vagrant virtual boxes, then don't edit apache2.conf directly. Edit the file that apache2.conf includes: /etc/apache2/sites-enabled/000-default.
 
 Finally, restart Apache
 
     $ sudo /etc/init.d/apache2 restart
 
-Go back to http://33.33.33.40/mydrupal and everything should work.
+Go back to http://33.33.33.40/mydrupal and everything should still work.
