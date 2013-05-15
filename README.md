@@ -101,6 +101,10 @@ If http://33.33.33.40/ilrdrupal/docroot seems like a lot to type and look at, yo
 
 to the \<VirtualHost> block of /etc/apache2/apache2.conf. If you're on our default Vagrant virtual boxes, then don't edit apache2.conf directly. Edit the file that apache2.conf includes: /etc/apache2/sites-enabled/000-default.
 
+Change the value of $base_url in /var/www/site-php/ilr/ilrdrupal/settings-php.inc accordingly. For example:
+
+    $base_url = 'http://33.33.33.40/mydrupal';
+
 Finally, restart Apache
 
     $ sudo /etc/init.d/apache2 restart
