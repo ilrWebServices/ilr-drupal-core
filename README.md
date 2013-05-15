@@ -73,7 +73,13 @@ Once you've done that, follow these steps to finish the installation of ilrdrupa
           ),
         );
 
-4.  Go  to http://33.33.33.40/ilrdrupal/docroot/install.php in your browser. You should now be able to complete the Drupal install. As with any new install of Drupal where the database connection information has been added to settings.php, you will receive a database error complaining about a missing semaphore table if you try to go to any other address on your site.
+4.  Before saving and exiting settings-php.inc, add the following line:
+
+        $base_url = 'http://33.33.33.40/ilrdrupal/docroot';
+
+    This may be required by certain modules that would otherwise fail to determine the Drupal root.
+
+5. Go  to http://33.33.33.40/ilrdrupal/docroot/install.php in your browser. You should now be able to complete the Drupal install. As with any new install of Drupal where the database connection information has been added to settings.php, you will receive a database error complaining about a missing semaphore table if you try to go to any other address on your site.
 
     If you receive the error:
 
