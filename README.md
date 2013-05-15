@@ -23,6 +23,11 @@ This places Drupal's root directory at %webroot%/ilrdrupal/docroot.
 > while logged into your virtual server via an SSH session. Since Vagrant mirrors the /var/www/ directory 
 > in a directory on your local machine - e.g., c:\vagrant-files\www, you could also do these commands there from a command prompt.
 
+> **Note:** If you get an SSH key error then you need to create one on your VM and add it to your Github account. 
+> Follow the instructions here: https://help.github.com/articles/generating-ssh-keys
+> I wasn't able to run 'clip' command so I just ran cat id_rsa.pub and copied the output and then pasted it into Github
+> and made sure I removed any leading spaces.  - Nathan
+
 Before running Drupal's install script, you'll have to add one more piece to account for the way Acquia manages the database.
 
 #### Creating the setting-php.inc file
