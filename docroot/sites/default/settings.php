@@ -552,5 +552,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['allow_authorize_operations'] = FALSE;
 if (file_exists('/var/www/site-php')) {
+  # Uncomment the following lie of this site is part of a multisite installation of Drupal
+  # $thisMultisite = dirname(__FILE__);
   require('/var/www/site-php/ilr/ilr-settings.inc');
 }
